@@ -2,7 +2,6 @@
 // access the app from you browser at http://localhost:8080/ (add any arbitrary path)
 
 const http = require('http');
-const url = require('url');
 const path = require('path');
 const fs = require('fs');
 const moment = require('moment');
@@ -13,6 +12,7 @@ var server = http.createServer((req, res) => {
     console.log(currentTime);
     const parser = new MyParser();
     const queryParam = parser.parseUrl(req.url);
+    console.log('The query param was', queryParam);
     const contentType = parser.getContentType(queryParam);
     if (contentType) {
         res.writeHead(200, {'Content-Type': contentType});
