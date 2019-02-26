@@ -4,7 +4,8 @@
   "description": "Start out with the version of the simple HTTP server example from class that's included in this project.  This is a working HTTP file server. You'll be making several modifications to the starter code, and adding some files of your own.",
   "main": "simple-http-file-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node simple-http-file-server.js"
   },
   "repository": {
     "type": "git",
