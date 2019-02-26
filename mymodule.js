@@ -23,7 +23,7 @@ class MyParser {
         if (url) {
             const parsed = this._url.parse(url, true);
             if (parsed) {
-                return parsed.query.ext;
+                return parsed.query.name;
             }
         }
     }
